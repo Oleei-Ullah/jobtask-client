@@ -61,7 +61,7 @@ const Section = ({ tasks, status, refetch }) => {
 
 
     return (
-        <div ref={drop} className="w-[30%]">
+        <div ref={drop} className="md:w-[30%]">
             <div className={`h-12 flex items-center pl-4 rounded-md uppercase text-white ${bg} text-sm`}>
                 {status}
                 <div className="ml-2 bg-white h-5 w-5 rounded-full text-black flex items-center justify-center">{taskToMap?.length}</div>

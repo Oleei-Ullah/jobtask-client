@@ -5,6 +5,7 @@ import { useAuth } from "../hooks/useAuth";
 import useTitle from "../hooks/useTitle";
 import Loader from "../components/Loader";
 import Section from "../components/Section";
+import AddTask from "./AddProduct";
 
 
 const MyTasks = () => {
@@ -15,11 +16,11 @@ const MyTasks = () => {
     const { data: tasks, isLoading, isError, refetch } = useQuery({
         queryKey: ['tasks'],
         queryFn: () => fetch(`https://jobtaskphero.vercel.app/api/tasks?email=${user?.email}`)
-        .then(res => res.json())
+            .then(res => res.json())
     })
 
 
-        const statuses = ['todos', 'ongoing', 'completed'];
+    const statuses = ['todos', 'ongoing', 'completed'];
 
 
     if (isLoading) return <Loader />
@@ -33,9 +34,19 @@ const MyTasks = () => {
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
             exit={{ x: window.innerWidth, transition: { duration: .1 } }}
-            className="flex gap-16">
+            className="">
+            <AddTask refetch={refetch} />
+            <div>
 
-                {statuses.map((status,index) => <Section refetch={refetch} status={status} tasks={tasks} key={index}/>)}
+                <h1 className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text font-bold flex items-center justify-center py-10 text-2xl font-lora text-center">My Tasks</h1>
+
+                <div className="flex flex-col md:flex-row gap-16">
+                    {statuses.map((status, index) => <Section refetch={refetch} status={status} tasks={tasks} key={index} />)}
+
+                </div>
+            </div>
+
+
 
 
         </motion.div>

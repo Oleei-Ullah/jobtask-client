@@ -63,7 +63,7 @@ const Navbar = () => {
             <li><NavLink className={({ isActive }) => isActive ? 'text-red-500' : ''} to={'/'}>Home</NavLink></li>
 
 
-            <li><NavLink className={({ isActive }) => isActive ? 'text-red-500' : ''} to={'/allproducts'}>Products</NavLink></li>
+            <li><NavLink className={({ isActive }) => isActive ? 'text-red-500' : ''} to={'/dashboard'}>Dashboard</NavLink></li>
 
 
           </ul>

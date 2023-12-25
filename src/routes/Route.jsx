@@ -22,8 +22,6 @@ export const router = createBrowserRouter(createRoutesFromElements(
                 element={<PrivateRoutes><Dashboard /></PrivateRoutes>}
             >
                 <Route index element={<MyTasks />} />
-                <Route path="/dashboard/addproduct" element={<AddProduct />} />
-
             </Route>
             <Route path="*" element={<NotFound />} />
         </Route>
