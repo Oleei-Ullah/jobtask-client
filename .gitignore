@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Contentlayer
+.contentlayer
+
+
+
+
+
+
+# VITE_apiKey=AIzaSyBb3Bta1JCrsBSaPk8DUrFsJ8TrSx1S3QA
+# VITE_authDomain=doctors-portal-a84b9.firebaseapp.com
+# VITE_projectId=doctors-portal-a84b9
+# VITE_storageBucket=doctors-portal-a84b9.appspot.com
+# VITE_messagingSenderId=467232040191
+# VITE_appId=1:467232040191:web:2e2d65dc3216d056ce98ca
+
+
+# VITE_STRIPE_PK_KEY=pk_test_51M83t1IVPtt27fTQ9lg8TlV1U0lnOtxYKcO9XaPo2Enkv3TN2xvLAt0ireoQVSjJzG5kbXYf2l07yiUfzxigAjoF00BVAL0tK4
+
+# VITE_IMGBB_KEY=b96ac588830acbe1b46d42efe85845de
