@@ -14,7 +14,7 @@ const MyTasks = () => {
 
     const { data: tasks, isLoading, isError, refetch } = useQuery({
         queryKey: ['tasks'],
-        queryFn: () => fetch(`http://localhost:5000/api/tasks?email=${user?.email}`)
+        queryFn: () => fetch(`https://jobtaskphero.vercel.app/api/tasks?email=${user?.email}`)
         .then(res => res.json())
     })
 

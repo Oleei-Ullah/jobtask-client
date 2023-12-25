@@ -54,7 +54,7 @@ const Login = () => {
 
   const saveUser = (name, email,photoURL) => {
     const user = { name, email, photoURL };
-    fetch(`http://localhost:5000/api/users`, {
+    fetch(`https://jobtaskphero.vercel.app/api/users`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

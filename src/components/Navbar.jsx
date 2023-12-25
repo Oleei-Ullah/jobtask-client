@@ -56,7 +56,7 @@ const Navbar = () => {
       <div className="navbar bg-[#eef5f2] dark:bg-[#210d4bcf] shadow font-lora">
         <div className="flex-1">
           <Logo />
-          <span className='text-[20px] ms-3 font-bold text-[#190482] dark:text-[#008170]'>Show</span>
+          <span className='text-[20px] ms-3 font-bold text-[#190482] dark:text-[#008170]'>Tasker</span>
         </div>
         <div className="flex-none text-black dark:text-white hidden md:block md:mr-[10%]">
           <ul className="gap-4 uppercase text-sm font-semibold menu-horizontal p-0">

@@ -18,7 +18,7 @@ const Section = ({ tasks, status, refetch }) => {
       )
 
       const addItem = (id) => {
-        fetch(`http://localhost:5000/api/update/${id}`, {
+        fetch(`https://jobtaskphero.vercel.app/api/update/${id}`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

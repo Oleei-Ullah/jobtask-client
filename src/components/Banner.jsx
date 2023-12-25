@@ -1,8 +1,10 @@
 
 import HeroSlider, { Slide } from "hero-slider";
+import { useNavigate } from "react-router-dom";
 
 
 const Banner = () => {
+    const navigate = useNavigate();
     return (
         <div className='h-[600px] relative'>
 
@@ -29,21 +31,21 @@ const Banner = () => {
         >
             <Slide
                 background={{
-                    backgroundImageSrc: 'https://hips.hearstapps.com/hmg-prod/images/amazon-tech-products-2021-1635430982.jpg',
+                    backgroundImageSrc: 'https://www.shutterstock.com/image-vector/business-planning-task-management-concept-260nw-1987578881.jpg',
                     backgroundAttachment: 'fixed'
                 }}
             />
 
             <Slide
                 background={{
-                    backgroundImageSrc: 'https://i.insider.com/61c371ce3bbcdd0012a06398?width=700',
+                    backgroundImageSrc: 'https://i0.wp.com/getflowdotcom.wpcomstaging.com/wp-content/uploads/2020/05/task-management-tips.jpg?fit=1255%2C835&ssl=1',
                     backgroundAttachment: 'fixed'
                 }}
             />
 
             <Slide
                 background={{
-                    backgroundImageSrc: 'https://reviewed-com-res.cloudinary.com/image/fetch/s--T2M-kers--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_1200/https://reviewed-production.s3.amazonaws.com/1572547548390/Reviewed100-Tech-hero-1.jpg',
+                    backgroundImageSrc: 'https://startinfinity.s3.us-east-2.amazonaws.com/production/blog/post/5/main/1SvzKctRCi8bwB0QPdOZkBP0pRhsOqZpl0wjs6y0.png',
                     backgroundAttachment: 'fixed'
                 }}
             />
@@ -53,6 +55,10 @@ const Banner = () => {
                 <h1>Showcase Your</h1>
                 <h1>Beautiful Techs</h1>
                 <h1>With beauty!</h1>
+
+                <button onClick={() => navigate('/dashboard')} className="text-center mx-auto my-3 inline-block px-2 rounded-e-md min-w-[200px]">
+                <h1 className="bg-gradient-to-r px-2 py-1 rounded from-blue-600 via-green-500 to-indigo-400 text-black font-bold inline-block text-2xl font-lora text-center">Lets Explore</h1>
+            </button>
             </div>
         </div>
     )
